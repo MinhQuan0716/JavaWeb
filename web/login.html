@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </head>
+    <body>
+        <form action="MainController" method="POST">
+            User Id <input type="text" name="usrdID" required=""/> <br> 
+            Password <input type="password" name="password" required=""/><br>
+              <input type="submit" name="action" value="Login"/>
+               <input type="reset" name="Reset"/>
+           <div class="g-recaptcha" data-sitekey="6LdTb4IhAAAAAFfnVMkf6zh-XPnRobhSkEZ3okgk"></div>
+       </form>
+         <a href="createuser.jsp">Create new user</a> <br>
+  <a href="https://accounts.google.com/o/oauth2/auth?scope=email+profile&redirect_uri=http://localhost:8084/PRJ301_SU22_3W_JSP/LoginGoogle&response_type=code
+              &client_id=1043905399296-hn1s534602rp00ijgo0n68lm0b97lasf.apps.googleusercontent.com&approval_prompt=force">Login With Google</a>  <br>
+    </body>
+</html>
